@@ -118,7 +118,8 @@ $('send').addEventListener('click',()=>{
   ].join('\n');
 
   const url='https://wa.me/255755177435?text='+encodeURIComponent(msg);
-  window.location.assign(url);
+  alert('Your order is ready. Opening WhatsApp...');
+window.open(url, '_blank');
 });
 
 if('serviceWorker' in navigator && location.protocol==='https:'){
